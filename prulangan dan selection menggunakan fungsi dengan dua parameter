@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void prima (int s, int t)
+{
+for (int i = s; i<=t; i++){
+  int counterprima = 0;
+  for (int n = 1 ; n <= i ; n++){
+     if ( i % n==0){
+     	counterprima++;
+	 }	
+  }
+  if (counterprima == 2){
+  	cout<<i<<" ";
+  }	
+}
+}
+
+int main(){
+	int a,b;
+	cout<<"Masukan angka awal:";cin>>a;
+	cout<<"Masukan angka akhir:";cin>>b;
+	prima(a,b);
+}
